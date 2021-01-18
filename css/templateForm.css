@@ -1,0 +1,34 @@
+
+/*searchform*/
+
+.ym-searchform .ym-searchfield{
+    background:none repeat scroll 0 0 #fff;
+    border:0 none;
+    color:#7F7F7F;
+    float:left;
+    font:12px 'Helvetica', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    height:20px;
+    margin:0;
+    padding:10px;
+    transition:background 0.3s ease-in-out 0s;
+    width:300px;
+
+    box-shadow:none;
+}
+
+.ym-searchform .ym-searchbutton{
+    background:url("search.png") no-repeat scroll center center #7eac10;
+    cursor:pointer;
+    height:40px;
+    text-indent:-99999em;
+    transition:background 0.3s ease-in-out 0s;
+    width:40px;
+    border:2px solid #fff !important;
+
+    border-radius:0;
+    line-height:1 !important;
+}
+
+.ym-searchform .ym-searchbutton:hover{
+    background-color:#000;
+}

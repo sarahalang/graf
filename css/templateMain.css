@@ -1,0 +1,13 @@
+main div.ym-gbox-right  {
+	margin-left: 1em; 
+    margin-right: 0;
+    background-color:#ffffff;
+}
+
+main div.ym-gbox-left {
+    margin-left: 0; 
+    margin-right: 1em;
+    background-color:#ffffff;
+}
+
+img {display: block;}

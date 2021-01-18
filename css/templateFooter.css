@@ -1,0 +1,30 @@
+/*
+### Ergänzungen Footer ###
+*/
+footer {
+    background-color: #475862; 
+    padding-bottom: 4em;
+    margin-top: 0;
+    color: #ffffff;
+}
+
+footer h6 {
+     color: inherit;
+     background-color: inherit;
+     border-bottom: 1px solid #ffffff;
+     margin-bottom: 1em;
+}
+
+footer a {
+    color: inherit;
+}
+
+footer a:hover, footer a:focus {
+    background-color: #475862;
+    text-decoration:underline;
+    
+}
+.logoGAMS img , .license img {
+    padding-top:5px;
+    
+}

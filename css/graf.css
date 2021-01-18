@@ -1,0 +1,898 @@
+@import url(/fonts/OpenSans/OpenSans.css);
+@import url(/fonts/DroidSerif/DroidSerif.css);
+
+/*
+###### Typography
+*/
+html{
+    background-color:#2b353b;
+}
+
+body{
+    font-family:"Open Sans", Arial, Helvetica, sans-serif;
+    background-color:#e8e8e8;
+    color:#474747;
+}
+
+table {
+    margin: 15px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+    border-spacing: 5px;
+}
+
+/* borderless table */
+.table.table-borderless td, .table.table-borderless th {
+    border: 0 !important;
+}
+
+.table.table-borderless {
+    margin-bottom: 0px;
+    border: 0 !important;
+}
+
+
+/* ----------------------------------------------------------------- */
+    .margin {margin-bottom: 45px;}
+    
+    .bg-beige { 
+      background-color: #F7F1E3; /* Beige */
+    }
+    .bg-white { 
+      background-color: #ffffff; /* White */
+    }
+    
+    .bg-greybox {
+        background-color: lightgray; 
+        color:#fff;
+    }
+    
+    .bg-greybox-blackfont {
+        background-color: lightgray; 
+        color:#000;
+    }
+    
+    .bg-grafred { 
+      background-color: #660022; /* projektfarbe - GrafRed weinrot - light: #B38091*/
+    }
+    .bg-grafred-light { 
+      background-color: #B38091; /* projektfarbe - GrafRed weinrot - light: #B38091*/
+    }
+    
+    .bg-blue { 
+      background-color: #1A5276; /* beta blue 5bc0de */ 
+    }
+    .bg-betablue { 
+      background-color: #5bc0de; /* beta blue 5bc0de */ 
+    }
+    .bg-grey { 
+      background-color: #e8e8e8; /* gams template hintergrund grau */ 
+    }
+
+    .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    height: 100vh; /* background-attachment: fixed; background-size: cover; */
+    scroll-snap-align: center;
+    justify-content: center;
+  }
+  
+  .next {
+  background-color: #660022;
+  color: white;
+}
+
+.anchor-adjust {
+    top: -50vh;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+
+.resize {
+    width: 70%;
+}
+
+/* notes im Text nicht angezeigt, im aside aber schon */
+li span .note {
+    display:block !important;
+}
+
+div.panel .note {
+    display:none;
+}
+
+/*
+fuer das Grid (von Gerlinde genommen)
+*/
+.center-block{
+   background-color: white;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    vertical-align: bottom; 
+}
+
+
+.grid-image-block{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    height: 300px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.grid-image-block p{
+    width: 100%;
+    height: 100%;
+    font-weight: normal;
+    font-size: 19px;
+    padding-top: 150px;
+    background-color: rgba(3, 3, 3, 0.0);
+    color: rgba(6, 6, 6, 0.0);
+}
+
+.grid-image-block:hover p{
+    background-color: rgba(71, 88, 98, 0.6);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.grid-image-block:hover .grid-info{
+    -webkit-transform: translateY(-20px);
+    /* -ms-transform: translateY(-20px);  */
+    transform: translateY(-20px);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.grid-info{
+    background-color: rgba(255, 255, 255, 0.9);
+    bottom: 5px;
+    margin: 10px;
+    right: 5px;
+    left: 5px;
+    padding: 2px;
+    height: 77px;
+    position: absolute;
+    text-align: center;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.grid-image-block span{
+    color: rgb(71, 88, 98);
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.1em;
+    letter-spacing: 0.1em;
+    padding: 0 20px;
+    position: relative;
+    font-variant: small-caps;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+div.grid-image{
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out 0s;
+    width: 100%;
+    margin-top: 0 !important;
+}
+
+/* Grid Image rund */
+
+.grid-image-round{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    height: 300px;
+    text-align: center;
+    vertical-align: bottom;
+     border-radius: 50%;
+}
+
+.grid-image-round p{
+    width: 100%;
+    height: 100%;
+    font-weight: normal;
+    font-size: 19px;
+    padding-top: 150px;
+    background-color: rgba(3, 3, 3, 0.0);
+    color: rgba(6, 6, 6, 0.0);
+}
+
+.grid-image-round:hover p{
+    background-color: rgba(102, 0, 34, 0.35);
+    transition: all 0.3s ease-in-out 0s;
+     border-radius: 50%;
+}
+
+.grid-image-round:hover .grid-info{
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.grid-image-round span{
+    color: rgb(71, 88, 98);
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.1em;
+    letter-spacing: 0.1em;
+    padding: 0 20px;
+    position: relative;
+    font-variant: small-caps;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+/* static Zeugs von Gerlinde */
+
+.static article{
+    padding: 1em;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.static-wrapper{
+    margin: 0 !important;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px dotted #596C75; /* Striche dazwischen */
+}
+.imprint-wrapper{
+    margin-bottom: 1em;
+    background-color: #e0ccd2;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px dotted #596C75; /* Striche dazwischen */
+}
+.static-wrapper-no-bottom{
+    margin: 0 !important;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+
+h3.static-title{
+    margin-top: 0;
+    margin-bottom: 1.1em;
+    font-size: 130%;
+    float: left;
+    font-family: 'Open Sans';
+}
+
+.static-wrapper{
+    clear: both;
+}
+
+.lightgrey-box {
+    background-color: #ecece7; 
+    margin-bottom:10px !important;
+}
+
+.spaced-head {
+    margin:5px;
+}
+
+.red-box {
+    background-color:#F8B1A6; /* eb8f81 */
+    padding:0.2em; 
+    margin:5px;
+}
+.subject-tag {
+    background-color:#F8B1A6; /* e46a57 */
+    padding:0.2em; 
+    margin:5px;
+}
+
+.blackwhite-span {
+    color:#FFF;
+    background-color:#000000;
+    padding:0.2em;
+}
+
+.person-tag {
+    background-color:#bec2e0; /* 9ca1bf */
+    padding:0.2em;
+}
+.animal-tag {
+    background-color:#BEE2B6; /* a2bf9c */
+    padding:0.2em;
+}
+
+/* wird evtl nicht gebraucht.. */
+.static h1,
+.material h1{
+    font-size: 110%;
+    margin: 15px;
+    line-height: 1.4em;
+    font-weight: 600;
+    font-family: inherit !important;
+    color: inherit !important;
+}
+
+/*farben im main bereich sollen für alle projekte gleichbleiben wg. kontrast und einheitlichkeit*/
+
+h1,
+h3,
+h4,
+h5,
+h6{
+    font-family:"Amati SC", Georgia, "Times New Roman", Times, serif;
+    /*  margin-left: 15px;*/
+}
+
+h1{
+    font-size:200%;
+    margin-bottom:0;
+    margin-top:2em;
+}
+
+h2{
+    font-size:140%;
+    font-family:"Open Sans", Arial, Helvetica, sans-serif;
+    font-style:italic;
+    margin-bottom:0.8em;
+    margin-top:1.5em;
+}
+
+h3{    
+    color:#660022; /*projektfarbe!*/
+    font-size:130%;
+    line-height:1.8em;
+    margin-top:1.5em;
+}
+h3.objekt{
+    margin-top:5px;
+}
+
+h4{
+    font-size:120%;
+    color:#333333;
+    font-family:"Open Sans", Arial, Helvetica, sans-serif;
+    /*  font-style:italic;  */
+    margin-top:1.5em;
+    padding-right: 0.1em;
+}
+
+
+h5{
+    font-family:"Open Sans", Arial, Helvetica, sans-serif;
+    color:#333333;
+    margin-top:1.5em;
+    text-decoration: underline;
+
+}
+
+h6{
+    font-family:"Open Sans", Arial, Helvetica, sans-serif;
+    color:#333333;
+    font-size:100%;
+    line-height:1.5;
+    margin-top:1em;
+    font-style:italic;
+}
+
+
+code.biglink a {
+    color:#000 !important;
+}
+
+
+code.biglink a:hover,
+a:focus{
+    background-color: #5bc0de;
+    color: #fff !important;
+    border-bottom: none;
+    text-decoration: none;
+}
+
+.link-white {
+    color: #fff !important;
+}
+
+blockquote,
+cite,
+q{
+    font-family:"Open Sans", Arial, Helvetica, sans-serif;
+}
+
+main a, #texte a {
+    color:#796068; /* betablue: 5bc0de; projektfarbe! 660022*/
+    border-bottom: 2px solid #ECE7E7;
+}
+
+a:hover,
+a:focus{
+    background-color:transparent;
+    color:inherit;
+    border-bottom: none;
+    text-decoration: none;
+}
+
+div.lightgrey-box h2 a{
+    border-bottom: none;
+    text-decoration: none;
+    color: #474747;
+}
+
+div.lightgrey-box h2 a:hover, a:focus{
+    color: #796068 !important;
+}
+
+a.autorenbutton {
+    color:#fff;
+    border-bottom: none;
+    background-color: #5bc0de;
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin:10px;
+    line-height: 180%;
+}
+
+
+a.autorenbutton:hover, a.autorenbutton:focus {
+    background-color: #434343;
+    color: #fff;
+}
+
+a.autorenbutton span.glyphicon {
+    color: #fff;
+}
+
+
+h2 a{
+    border-bottom: none;
+    text-decoration: none;
+    color: #796068;
+}
+
+h2 a:hover, a:focus{
+    color: #474747 !important;
+}
+
+
+.color{
+    color:#660022; /*projektfarbe!*/
+}
+
+
+.glyphicon {
+     color: grey;
+     margin: 5px;
+}
+
+
+/*
+###### Header
+*/
+@media (max-width: 768px){
+    header h1{
+        font-size: 160%; 
+    }
+      header h2{
+        font-size: 130%; 
+    }
+    .logoUni {
+    height: 45px;
+    
+    
+}
+
+}
+@media (max-width: 568px){
+    header h1{
+        font-size: 140%; 
+    }
+      header h2{
+        font-size: 100%; 
+    }
+}
+
+div.unilogo {
+    float: right;
+    margin-top:20px;
+}
+
+div a.unilogo {
+    width: 73px; 
+    height: 62px; 
+    text-decoration: none; 
+    background: none;
+}
+
+header {
+    background-color: #660022;/*projektfarbe!*/
+    overflow: hidden;
+     height: 155px;
+   
+}
+
+header h1, header h2, div.language  {
+    color: #ffffff;
+}
+header h1{
+    margin-top:37px;
+}
+div.language {
+    text-align:right;
+    
+    padding-bottom:10px;
+    font-size: 80%;
+}
+div.language a, div.language a:hover, div.language a:focus {
+    color:#ffffff;
+    background:transparent;
+    
+}
+
+/*
+###### Navigation
+siehe navbar.css
+*/
+
+
+/*
+###### Main
+
+*/
+main a:hover, main a:focus {
+    background-color:transparent;
+    color:#660022; /*projektfarbe!*/
+}
+
+
+
+main p {
+line-height:1.5;
+margin-bottom:1.5em;
+text-align:justify;
+}
+
+p {
+line-height:1.5;
+margin-bottom:1.5em;
+text-align:justify;
+}
+
+/*
+###### Footer
+
+*/
+
+footer {
+    background-color: #2b353b; 
+    padding-bottom: 30px;
+    margin-top: 0;
+    color: #ffffff;
+}
+
+footer h6 {
+     color: inherit;
+     background-color: inherit;
+     border-bottom: 1px solid #ffffff;
+     margin-bottom: 1em;
+     margin-left: 0px;
+}
+
+footer a {
+    color: inherit;
+}
+
+
+img.footer_icons{
+    padding-right:10px;
+    padding-bottom:10px;
+}
+
+.icons a:hover, .icons a:focus {text-decoration:none;}
+
+/* Footer Logos*/
+img.logo{
+    height: 40px;
+    margin-right: 2em;
+    padding-right:10px;
+    padding-bottom:10px;
+}
+
+.logol{
+    height: 35px;
+}
+
+img.logoG{
+    margin-right: 2em;
+    padding-bottom:10px;
+}
+
+/* WIPPET
+ * 
+ * 
+ */
+
+/* styles for simpleCheckboxMenu (SCM) */
+
+.scm-bg-highlight{
+    background-color:red;
+}
+.scm-font-highlight{
+    color:blue;
+}
+
+.scm-vokabel{
+    background-color: #eeb09b;
+    padding-left: 0.5em;
+}
+
+.scm-stilistik{
+    background-color: #E6E6FA;
+    padding-left: 0.5em;
+}
+
+.scm-realien{
+    background-color: #ffc8d1;
+    padding-left: 0.5em;
+}
+
+.scm-grammatik{
+    background-color: #ffe3cb;
+    padding-left: 0.5em;
+}
+
+.scm-textkritik{
+    background-color: #ffd280;
+    padding-left: 0.5em;
+}
+
+.checkbox {
+    list-style: none;
+}
+
+/* ................................................. */
+
+.Gliederung{
+    display:none;
+    overflow:hidden;
+}
+ 
+.scm-Gliederung{
+    display:inline;
+    color:#a09e9e;
+     overflow:hidden;
+     margin-top:2em;
+}
+.metrik{
+    display:none;
+    overflow:hidden;
+}
+
+.scm-metrik{
+    display:inline;
+    color:#a09e9e;
+    overflow:hidden;
+    margin-top:1em;
+}
+
+
+
+.scm-element-show{
+    display: flex;
+}
+.scm-element-hide{
+    display: none;
+    overflow: hidden;
+}
+
+/* end default styles wippet */
+
+.uebers {
+    overflow: hidden;
+    display:none;
+}
+.hidden {
+    overflow: hidden;
+    display:none;
+}
+
+.visible {
+    display: flex;
+}
+
+.page-header{
+    padding-top: 5%;
+    color:#660022;
+}
+
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 3em 10px;
+  padding: 0.5em 10px; 
+}
+ 
+.article-note {
+    font-size:smaller;
+    margin-bottom:0.5em;
+}
+
+p:after {
+    margin-bottom: 1.5em;
+}
+
+
+
+/*
+###### Boxen
+*/
+
+
+.panel{
+    box-shadow:none; 
+    border-radius:0;
+    padding-right:20px;
+    padding-left:20px;
+    margin-bottom:30px;
+}
+
+/*
+###### Bilder
+*/
+
+.thumbnail{
+    border-radius:0;
+}
+
+.panel-with-image{
+    padding-right:0;
+    padding-left:0;
+    background-color:#660022; /*projektfarbe*/
+    border:none;
+}
+
+.panel-with-image .panel-body h4{
+    color:white;
+    margin:0;
+}
+.panel-with-image .panel-body a{
+    color:white;
+    float:right;
+}
+.panel-image img.panel-image-preview {
+    width: 100%;
+}
+
+.panel-heading ~ .panel-image img.panel-image-preview {
+	border-radius: 0px;
+}
+
+.panel-image ~ .panel-body, .panel-image.hide-panel-body ~ .panel-body {
+	overflow: hidden;
+}
+.panel-image ~ .panel-footer a {
+	padding: 0px 10px;
+	font-size: 1.3em;
+}
+
+.panel-image.hide-panel-body ~ .panel-body {
+	height: 0px;
+	padding: 0px;
+}
+
+
+/*
+###### Suche und Kontextliste
+*/
+
+.list-group-submenu {
+  margin-left:20px;
+}
+.chevron-down-context{
+    font-size:10px; 
+    padding-right:5px;
+}
+.context-item-number{
+    float:right;
+    color:#660022; /*projektfarbe*/
+}
+
+p.results{
+    float:right; bottom: 0; right: 0; font-size:12px;
+}
+
+li.results{
+    position:relative;overflow:hidden;border-bottom:dotted 1px;padding:5px 0 5px 0;margin:5px 0 5px 0;
+}
+
+li.results:last-child {border-bottom:none;}
+
+img.results{
+    float: left; padding-right: 10px; padding-bottom:5px;
+}
+
+span.results{
+    vertical-align: top; padding-right: 10px;
+}
+span.permalink{
+    font-size:12px;
+}
+.icons{
+    margin-left:5px;
+}
+span.icon-span{
+    position: absolute; bottom: 0; right: 0; padding:5px;
+}
+.form-control, .input-group-addon, .btn{
+    border-radius:0;
+}
+
+#search a, #search a:hover, #search a:focus, #results a, #results a:hover, #results a:focus {
+    color:#333333;
+    text-decoration:none;
+}
+
+
+#search p, #results p {margin-bottom:5px;}
+
+#search-navi a, #search-navi a:hover, #search-navi a:focus {
+color:#660022;/*projektfarbe!*/
+}
+
+
+.result {
+list-style:none; 
+padding:0;
+margin:0;
+}
+
+
+/*Accordion*/
+
+.accordion{
+    padding:0;
+}
+.sublinks{
+    max-height: 270px;
+    overflow-y: scroll;
+}
+.accordion .list-group-item{
+    border-radius:0;
+}
+
+/**Styling fr die Elementliste in der Sidebar des ODD Interfaces**/
+#sidebar .panel {
+    
+    padding:20px;
+    
+}
+#moduleList a{
+    font-size: 20px; 
+    font-variant: small-caps;
+    
+}
+#elementList #descElementList strong{
+	font-variant: small-caps;
+	font-size: 20px;
+}
+/** END ODD Sidebar **/
+
